@@ -1,0 +1,60 @@
+.fondo {
+    background-image: url(/build/img/logo2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    background-position:90% 30%;
+   
+}
+
+.navegacion {
+    display:flex;
+    justify-content:flex-end;
+    font-weight: $black;
+    padding-right: 2rem;
+
+    a {
+        padding-left: 2.5rem;
+        margin: 1rem 0;
+        color: rgba(255, 250, 250, 0.712);
+
+        &:hover {
+            color: $colorF;
+        }
+    }
+
+}
+
+@include telefono {
+    .fondo{
+        height: 40vh;
+        width:auto;
+        background-position:50% 1%;
+    }
+
+    .navegacion {
+        justify-content: space-between;
+     } 
+}
+
+@include tablet {
+    .fondo {
+        height: 60vh;
+        background-position: center 30%;
+    }
+
+    .navegacion {
+        justify-content: flex-end;
+     } 
+}
+
+@include desktop {
+    .fondo{
+        height: 70vh;
+        background-position: center 30%;
+    }
+
+    .navegacion {
+        justify-content: flex-end;
+     } 
+}

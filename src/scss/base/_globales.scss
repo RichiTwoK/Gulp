@@ -1,0 +1,68 @@
+html {
+    font-size: 62.5% ;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $Fuente_principal;
+    font-size: 1.6rem;
+
+    background-color: $colorE;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 2.6rem;
+}
+
+.contenedor {
+   // width:min(90%, 120rem);
+    margin-top: 0rem;
+    margin-bottom: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedor2 {
+   // width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+a {
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+@include telefono {
+    a{
+        font-size: 1.8rem;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,h2,h3,h4{
+    margin:0;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: $black;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCKYES</title>
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;700&display=swap" crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link rel="preload" href="CSS/normalize.css" as="style">
+    <link rel="stylesheet" href="CSS/normalize.css">
+   
+    <link rel="preload" href="CSS/styles.css" as="style">
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <link rel="preload" href="Img/fondo.webp" as="image">
+    <link rel="preload" href="Img/logo_pag_sec.webp" as="image">
+
+</head>
+
+<body>
+    <header class="fondo__sn">
+        <div class="fondo__flex ">
+            <div class="fondo__hijo">
+                <a href="index.html"><img class="fondo__img" src="Img/logo_pag_sec.webp" alt="Logo_png"></a>
+            </div>
+            <nav class="fondo__hijo derecha">
+                <a class="navegacion__flez" href="diseños.html">Diseños</a>
+                <a class="navegacion__flez" href="equipo.html">Equipo</a>
+                <a class="navegacion__flez" href="index.html">Inicio</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="social">
+		<ul>
+            <li><a href="https://www.facebook.com/Luckeys-106356778042959" target="_blank" class="icon-facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg></a>
+            </li>
+            <li><a href="https://www.instagram.com/luckeys_ri/" target="_blank" class="icon-instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                </svg></a>
+            </li>
+			<li><a href="#" target="_blank" class="icon-tiktok">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
+                </svg></a>
+            </li>
+            <li><a href="https://www.youtube.com/channel/UC6FhLU8DLMqU3-3XqX9_PFA/featured" target="_blank" class="icon-youtube">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="3" y="5" width="16" height="16" rx="4" />
+                    <path d="M10 9l5 3l-5 3z" />
+                  </svg></a>
+            </li>
+			<li><a href="#" class="icon-mail">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <polyline points="3 7 12 13 21 7" />
+                </svg></a>
+            </li>
+		</ul>
+    </div>
+
+    <h3 class="centrar-texto no-margin equipo__titulo contenedor">Contacto</h3>
+    <div class="contacto_img borde__titulo"></div>
+  
+    <form class="formulario" name="contact" method="POST" data-netlify="true">>
+        <fieldset>
+            <legend>Contactanos llenando los campos</legend>
+            <div class="contenedor_campos">
+                <div class="campo">
+                    <label class="campo__label" for="nombre">Nombre</label>
+                    <input 
+                        class="campo__field"
+                        type="text" 
+                        placeholder="Tu Nombre" 
+                        id="nombre"
+                    >
+                </div>
+
+                <div class="campo">
+                    <label class="campo__label" for="email">E-mail</label>
+                    <input 
+                        class="campo__field"
+                        type="email" 
+                        placeholder="Tu E-mail" 
+                        id="email"
+                    >
+                </div>
+
+                <div class="campo">
+                    <label class="campo__label" for="telefono">Telefono</label>
+                    <input 
+                        class="campo__field"
+                        type="number" 
+                        placeholder="Tu Número de telefono" 
+                        id="telefono"
+                    >
+                </div>
+
+                <div class="campo">
+                    <label class="campo__label" for="mensaje">Mensaje</label>
+                    <textarea 
+                        class="campo__field campo__field--textarea"
+                        id="mensaje"
+                    ></textarea>
+                </div>
+            </div>
+
+            <div class="campo">
+                <input type="submit" value="Enviar" class="boton boton--primario">
+            </div>
+        </fieldset>
+    </form>
+    
+
+   
+
+    <footer class=" borde__titulo color">
+        <div class=" footer__flex contenedor__footer">
+            <nav class="navegacion footer_h ">
+                <a class="navegacion__flez" href="diseños.html">Diseños</a>
+                <a class="navegacion__flez" href="equipo.html">Equipo</a>
+                <a class="navegacion__flez" href="index.html">Inicio</a>
+            </nav>
+            <p class="footer_h">Todos los derechos reservados &reg;</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/RichiTwoK/Gulp/issues"
   },
-  "homepage": "https://github.com/RichiTwoK/Gulp#readme"
+  "homepage": "https://github.com/RichiTwoK/Gulp#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-sass": "^4.1.0"
+  }
 }
