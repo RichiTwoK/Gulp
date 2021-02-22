@@ -17,10 +17,11 @@ body {
 
 p {
     font-size: 2.6rem;
+    font-weight: $bold;
 }
 
 .contenedor {
-   // width:min(90%, 120rem);
+    width:min(90%);
     margin-top: 0rem;
     margin-bottom: 15rem;
     margin-left: auto;
@@ -29,6 +30,14 @@ p {
 .contenedor2 {
    // width: min(90%, 120rem);
     margin: 0 auto;
+}
+.borde__titulo {
+    border-top:0.5rem;
+    border-bottom: 0.5rem;
+    border-left: 0rem;
+    border-right: 0rem;
+    border-style: solid;
+    border-color: $colorC;
 }
 
 a {
@@ -64,5 +73,8 @@ h3 {
 }
 
 h4 {
+    font-size: 2.6rem;
+}
+li {
     font-size: 2.6rem;
 }

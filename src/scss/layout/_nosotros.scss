@@ -1,0 +1,36 @@
+
+.nosotros {
+    display: grid;
+    margin-top: 10rem;
+    
+    .nosotros__contenido {
+        text-align: center;
+        padding-top: 10rem;
+        
+    }
+    .nosotros__imagen {
+        margin: auto auto;
+        border-radius: 2rem;   
+    }
+
+    .nosotros img {
+        -webkit-box-shadow: -10px 17px 8px 5px rgba(25, 87, 13, 0.39);
+        -moz-box-shadow: -10px 17px 8px 5px rgba(25, 87, 13, 0.39);
+        box-shadow: -10px 17px 8px 5px rgba(25, 87, 13, 0.39);
+        max-width: 100%;
+    }
+}
+@include desktop {
+    .nosotros {
+        grid-template-columns:repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+.nosotros__titulo {
+    text-align: center;
+    background-color: $colorB;
+    padding:1rem;
+    margin-top: 10rem;
+    font-weight: $black;
+}

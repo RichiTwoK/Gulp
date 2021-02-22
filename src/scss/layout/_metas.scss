@@ -1,0 +1,38 @@
+.metas__titulo {
+    padding:1rem;
+    background-color: $colorB;
+    text-align: center;
+    margin-bottom: 9rem;
+}
+
+.borde {
+    border: 0.5rem solid $colorC;
+    background-color: $colorG;
+}
+
+@include desktop {
+    .metas {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .borde {
+        padding: 3rem;
+      
+    }
+    .grid__em {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.metas__iconos {
+    margin:0 1rem 0 4rem;
+}
+
+
+
+.fondo__me {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}

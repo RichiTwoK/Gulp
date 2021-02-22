@@ -1,0 +1,82 @@
+.contenedor_campos{
+    margin: auto 5rem;
+}
+
+.contacto_img {
+  background-image: url(/build/img/contacto1.webp); 
+  height: 40rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.formulario {
+    background-color: rgb(153, 7, 56);
+    margin: -3rem auto 3rem auto;
+    width:min(80rem);
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    color: $colorC;
+    font-family: $Fuente_principal;
+    font-size:2rem;
+    font-weight: 700;
+    text-align:center;
+    text-transform:uppercase;
+    margin-bottom: 2rem;
+}
+
+
+.campo {
+    margin-bottom: 2rem;
+}
+.campo__label {
+    background-color: $colorE;
+    border-radius:3rem;
+    color:var(--colorC);
+    font-family: $Fuente_principal;
+    font-size:2rem;
+    font-weight:500;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-align: center;
+}
+
+.campo__field {
+    font-size:1.25rem;
+    color: black;
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    text-align:center;
+    margin: auto ;
+}
+.campo__field--textarea {
+    height: 20rem;
+}
+
+.boton {
+    background-color: $colorA;
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    margin-left: 1.5rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius:0.5rem;
+    width:90%;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

@@ -4,26 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUCKYES</title>
-
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;700&display=swap" crossorigin="crossorigin" as="font">
-    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    
-    <link rel="preload" href="CSS/normalize.css" as="style">
-    <link rel="stylesheet" href="CSS/normalize.css">
-   
-    <link rel="preload" href="CSS/styles.css" as="style">
-    <link rel="stylesheet" href="CSS/styles.css">
-
-    <link rel="preload" href="Img/fondo.webp" as="image">
-    <link rel="preload" href="Img/logo_pag_sec.webp" as="image">
+    <link rel="stylesheet" href="build/css/app.css">
 
 </head>
 <body>
     <header class="fondo__sn">
         <div class="fondo__flex ">
             <div class="fondo__hijo">
-                <a href="index.html"><img class="fondo__img" src="Img/logo_pag_sec.webp" alt="Logo_png"></a>
+                <a href="index.html"><img class="fondo__img" src="/build/img/logo_pag_sec.webp" alt="Logo_png"></a>
             </div>
             <nav class="fondo__hijo derecha">
                 <a class="navegacion__flez" href="diseños.html">Diseños</a>
@@ -32,7 +20,7 @@
             </nav>
         </div>
     </header>
-    <div class="social">
+   <!-- <div class="social">
 		<ul>
             <li><a href="https://www.facebook.com/Luckeys-106356778042959" target="_blank" class="icon-facebook">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -69,13 +57,13 @@
                 </svg></a>
             </li>
 		</ul>
-    </div>
+    </div> -->
     <main class="contenedor">
         <h3 class="equipo__titulo">Equipo de Trabajo</h3>
         <section class="grupo borde">
             <h4 class="grupo__titulo">Corte Laser</h4>
             <div class="grupo__div">
-                <img loading="lazy" class="grupo__img" src="/Img/laser.webp" alt="cortadora">
+                <img loading="lazy" class="grupo__img" src="/build/img/laser.webp" alt="cortadora">
                 <div class="grupo__p">
                     <p>El corte con láser es una técnica empleada para 
                         cortar piezas de diferentes materiales como mdf acrilicos 
@@ -112,7 +100,7 @@
         <section class="grupo borde equipo">
             <h4 class="grupo__titulo">impresion 3d</h4>
             <div class="grupo__div">
-                <img  class="grupo__img" src="/Img/3d.webp" alt="3D">
+                <img  class="grupo__img" src="/build/img/3d.webp" alt="3D">
                 <div class="grupo__p">
                     <p>La impresión 3D es un grupo de tecnologías
                         de fabricación por adición donde un objeto 
@@ -145,7 +133,7 @@
         <section class="grupo borde equipo">
             <h4 class="grupo__titulo">Termoformado</h4>
             <div class="grupo__div">
-                <img loading="lazy" class="grupo__img" src="/Img/termo.webp" alt="termoconformado">
+                <img loading="lazy" class="grupo__img" src="/build/img/termo.webp" alt="termoconformado">
                 <div class="grupo__p">
                     <p>El termoconformado o termoformado es un proceso consiste 
                         en calentar una plancha o lámina de termoplástico semielaborado, 

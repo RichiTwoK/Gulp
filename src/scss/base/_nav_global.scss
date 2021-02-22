@@ -1,0 +1,83 @@
+.navegacion__flez {
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: rgba(255, 250, 250, 0.712);
+    &:hover {
+        color: $colorF;
+    }
+}
+
+
+.fondo__sn {
+    background-image: url(/build/img/fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 17vh;
+    background-position: center center;
+}
+
+@include tablet {
+    .fondo__sn {
+        height: 50vh;
+    }
+}
+
+
+@include desktop {
+    .fondo__sn {
+        height: 12vh;
+    }
+}
+.fondo__img {
+    width: 65%;
+    padding-left:13rem ;
+    padding-top:1rem;
+}
+.derecha{
+    text-align: center;
+    padding-top: 1rem;
+}  
+
+@include telefono {
+    .fondo__img {
+        width: 64%;
+        padding-left:15.5rem ;
+        padding-top:1rem;
+    }
+    .derecha{
+        text-align: center;
+        padding-top: 1rem;
+    }  
+}
+@include tablet {
+    .fondo__img {
+        width: 60%;
+        padding-left:32rem ;
+        padding-top: 1.5rem;
+    }
+    .derecha {
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+}
+
+
+
+@include desktop {
+    .fondo__flex {
+        display: grid;
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .fondo__img {
+        width: 34%;
+        padding-left: 5rem;
+        padding-top: 1rem;
+    }
+    .derecha {
+        padding-left:18rem;
+        padding-top: 2.8rem;
+        grid-column: 3/4;
+        align-items: center;
+    }
+}

@@ -1,0 +1,33 @@
+
+.futuro__titulo {
+    background-color: $colorD;
+    text-align: center;
+}
+.futuro__flex {
+    margin-bottom: 2rem;
+
+    .futuro__imagen {
+        width: 70%;
+        padding-left: 12rem;
+    }
+}
+
+
+@include desktop {
+    .futuro__flex {
+        display: flex;
+        justify-content: space-evenly;
+
+        .futuro__contenido {
+            padding-top: 5rem;
+            padding-bottom: 6rem;
+            text-transform:capitalize;
+            line-height:7rem;
+            font-weight: 500;   
+        }
+        .futuro__imagen {
+            max-width: 35%;
+        }
+    }
+    
+}

@@ -1,0 +1,58 @@
+.contenedor__footer {
+    width:min(50%);
+    margin: 0 auto;
+}
+
+.footer__flex p {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    text-align: center;
+}
+
+@include tablet {
+    .contenedor__footer {
+        width:min(75%);
+    }
+    .footer__flex {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        margin-top: 0rem;
+        margin-bottom:0;
+
+        p {
+            font-size: 1.5rem;
+            margin-left: 3rem;
+        }
+    }
+
+
+}
+
+
+@include desktop {
+    .contenedor__footer {
+        width:min(95%);
+    }
+    .footer__flex {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        margin-top: 0rem;
+        margin-bottom:0;
+
+        .footer__h {
+            display: block;
+            padding-left: 1rem;
+        }
+        p {
+            font-size: 1.6rem;
+        }
+    }
+  
+}
+
+.color {
+    background-color: $colorD;
+}
