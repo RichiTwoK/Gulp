@@ -2,6 +2,8 @@ const { series, src, dest, watch, parallel } = require('gulp');
 const sass = require('gulp-sass');
 const imagemin = require('gulp-imagemin');
 const notify = require('gulp-notify');
+const concat = require('gulp-concat');
+
 //const webp = require('gulp-webp');
 
 
@@ -9,7 +11,8 @@ const notify = require('gulp-notify');
 
 const paths = {
     imagenes: 'src/img/**/*',
-    scss: 'src/scss/**/*.scss'
+    scss: 'src/scss/**/*.scss',
+    js: 'src/js/**/*.js'
 }
 
 function css( ) {
@@ -24,6 +27,12 @@ function minificarcss(){
             outputStyle: 'compressed'
         }) )
         .pipe( dest('./build/css') )
+}
+
+function javascript(){
+    return src(paths.js)
+    .pipe( concat('bundle.js') )
+    .pipe( dest('./build/js') )
 }
 
 function imagenes() {
@@ -41,11 +50,13 @@ function imagenes() {
 //}
 
 function watchArchivos(){
-    watch(paths.scss, css ) // * -> busca solo en la carpeta actual / ** -> busca todos los archivos con la ext.
+    watch(paths.scss, css ); // * -> busca solo en la carpeta actual / ** -> busca todos los archivos con la ext.
+    watch(paths.js, javascript);
 }
 exports.css = css;
 exports.minificarcss = minificarcss;
 exports.imagenes = imagenes;
 exports.watchArchivos = watchArchivos;
 
-exports.default = series( css, imagenes, watchArchivos);
+
+exports.default = series( css, javascript, watchArchivos);

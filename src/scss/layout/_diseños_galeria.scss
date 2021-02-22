@@ -1,0 +1,53 @@
+/* Categorias (GALERIA) */
+.categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+
+    a {
+        margin:auto;
+        font-family: $Fuente_principal;
+        font-size: 2rem;
+        color: $colorF; 
+    }
+
+}
+
+@include tablet {
+    .categorias {
+        gap: 1rem;
+        margin-bottom: 2rem;
+        flex-direction:initial;
+        gap:initial;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        a {
+            margin: 1rem 1rem;
+        }
+    
+    }
+}
+
+@include desktop {
+    .categorias {
+        gap: 2.5rem;
+        margin-bottom: 2rem;
+        flex-direction:initial;
+        gap:initial;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        a {
+            margin: 1rem 3rem;
+        }
+    }
+}
+
+.categorias a.activo {
+    color: white;
+    background-color: $colorD;
+    padding:0 1rem;
+    border-radius: 0.5rem;
+}
